@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables
+.env
+
+# Logs and PIDs
+logs/
+*.log
+*.pid
+
+# Mac
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Models (Usually large files, should be downloaded separately)
+models/
+!models/.keep
+
+# Project specific
+output/
+tmp/
