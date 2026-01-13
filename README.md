@@ -37,12 +37,22 @@
     ```
 
 ## 🏗️ Model Preparation
-
-MLX-MemOS expects models to be placed in the `models/` directory. We provide scripts to help you convert Hugging Face models to MLX format.
-
-### 1. Download & Convert Models
-
-You can use the provided scripts in the `script/` directory to convert Qwen3 models. Note that you need to download the original Hugging Face models first or configure the scripts to download them.
+41→
+42→MLX-MemOS expects models to be placed in the `models/` directory.
+43→
+44→### ⚠️ Important: Restore Large Models
+45→
+46→Due to GitHub's file size limits, some large model files (over 2GB) are split into chunks. **You must run the following command after cloning to restore them:**
+47→
+48→```bash
+49→./script/manage_large_files.sh merge
+50→```
+51→
+52→This will reassemble files like `pytorch_model.bin` and `model.safetensors` from their split parts.
+53→
+54→### Download & Convert Models
+55→
+56→We also provide scripts to help you convert Hugging Face models to MLX format.
 
 ```bash
 # Example: Convert Qwen3-14B

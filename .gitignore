@@ -24,9 +24,17 @@ ENV/
 .vscode/
 
 # Models (Usually large files, should be downloaded separately)
-models/
+# models/
 !models/.keep
 
 # Project specific
 output/
 tmp/
+
+# Large files that are split
+models/bge-m3/pytorch_model.bin
+models/bge-reranker-v2-m3/model.safetensors
+models/Qwen3-8B-MLX/model.safetensors
+models/Qwen3-4B-MLX/model.safetensors
+models/Qwen3-14B-MLX/model-00001-of-00002.safetensors
+models/Qwen3-14B-MLX/model-00002-of-00002.safetensors
