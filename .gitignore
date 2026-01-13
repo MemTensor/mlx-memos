@@ -13,7 +13,6 @@ ENV/
 .env
 
 # Logs and PIDs
-logs/
 *.log
 *.pid
 
