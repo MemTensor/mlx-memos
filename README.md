@@ -48,7 +48,14 @@
 49→./script/manage_large_files.sh merge
 50→```
 51→
-52→This will reassemble files like `pytorch_model.bin` and `model.safetensors` from their split parts.
+52→This will reassemble files like `pytorch_model.bin` and `model.safetensors` from their split parts. Specifically, it handles:
+
+*   `models/bge-m3/pytorch_model.bin`
+*   `models/bge-reranker-v2-m3/model.safetensors`
+*   `models/Qwen3-8B-MLX/model.safetensors`
+*   `models/Qwen3-4B-MLX/model.safetensors`
+*   `models/Qwen3-14B-MLX/model-00001-of-00002.safetensors`
+*   `models/Qwen3-14B-MLX/model-00002-of-00002.safetensors`
 53→
 54→### Download & Convert Models
 55→
